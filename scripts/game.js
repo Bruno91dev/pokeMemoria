@@ -15,11 +15,9 @@ let game = {
     'suicune',
     'cinderace',
     'alakazam',
-    'nevinha',
     'dragonite',
     'meowth',
     'mrmime',
-    'venusaur',
     'farfetch',
     'blastoise',
     'aegislash'

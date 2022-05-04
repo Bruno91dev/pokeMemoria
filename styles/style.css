@@ -14,6 +14,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;  
   background-color: aqua;
+  width: 100%;
   
 }
 
@@ -165,12 +166,12 @@ audio::-webkit-media-controls-panel {background-color:rgba(0, 0, 0, 0.609);}
 
 @media only screen and (max-width: 700px) {
   #gameBoard{
-      max-width: 400px;
+      
       justify-content: center;
       align-items: center;
 
-      grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  / 1fr 1fr 1fr 1fr 1fr 1fr ;
-      gap: 50px;    
+      grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+      gap: 40px;    
   }
 
   .card{
@@ -179,28 +180,22 @@ audio::-webkit-media-controls-panel {background-color:rgba(0, 0, 0, 0.609);}
     }
 
   .icon{
-  width: 80px;
+  width: 70px;
 }
 .card_front,.card_back{
 border-radius:10px;
 }
 
 
-
-
-
-#imgInicial, #imgGameover , #imgGame, #fraseOver {
- width: 100%;
+#imgInicial, #imgGameover , #imgGame, #fraseOver{
+ width: 100vh;
  height: 100vh;
  background-size: cover;
  background-repeat: no-repeat;
  position: absolute;
- display: flex;
-
-
-
-
-  
+ display: flex;  
+ max-width: 100%;
+ max-height: 100%;
 }
 
 
