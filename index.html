@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Jogo da Memória - POKEMON</title>
+  </head>
+  <div id="audio">
+    <audio autoplay="true" src="./audios/abertura.mp3.mp3"></audio>
+    <audio controls loop="true" src="./audios/tema.mp3.mp3"></audio>
+  </div>
+  <body>
+    <div id="gamePlay">
+      <button id="start" onclick="start()">Iniciar a caçada Pokemon</button>
+    </div>
+    <div id="gameBoard"></div>
+
+    <div id="gameOver">
+      <div>Parabéns, você capturou todos os pokemons!</div>
+      <button id="restart" onclick="restart()">Jogue Novamente</button>
+    </div>
+
+    <audio
+      src="./audios/captura.mp3.mp3"
+      preload="auto"
+      id="card-check"
+    ></audio>
+    <audio src="./audios/notification.mp3.mp3" preload="auto" id="song"></audio>
+    <audio
+      src="./audios/notification2.mp3.mp3"
+      preload="auto"
+      id="song2"
+    ></audio>
+
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
