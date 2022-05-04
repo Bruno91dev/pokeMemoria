@@ -11,7 +11,6 @@ body{
   justify-content: center;
   align-items: center;
   height: 100vh;  
-  background-image: url(../imagens/fundojogo.jpg);
   background-size: cover;
   background-repeat: no-repeat;  
   background-color: aqua;
@@ -67,7 +66,6 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../imagens/gameOver.jpeg);
   background-repeat: no-repeat;
   background-size:cover;
   color: white;
@@ -104,7 +102,6 @@ body{
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../imagens/capa10.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   color: rgb(255, 255, 255);
@@ -128,7 +125,17 @@ button {
   border-radius: 10px;
   margin-top: 10px;
   color:white;
+  position: absolute;
+  display: flex;
 }
+
+#imgInicial, #imgGameover , #imgGame, #fraseOver {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  display: flex;}
 
 #start:hover,
 #restart:hover{
@@ -154,3 +161,48 @@ button {
 
 audio::-webkit-media-controls-timeline { display:inline-flex;}
 audio::-webkit-media-controls-panel {background-color:rgba(0, 0, 0, 0.609);}
+
+
+@media only screen and (max-width: 700px) {
+  #gameBoard{
+      max-width: 400px;
+      justify-content: center;
+      align-items: center;
+
+      grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  / 1fr 1fr 1fr 1fr 1fr 1fr ;
+      gap: 50px;    
+  }
+
+  .card{
+      width: 30px;
+      height: 30px;
+    }
+
+  .icon{
+  width: 80px;
+}
+.card_front,.card_back{
+border-radius:10px;
+}
+
+
+
+
+
+#imgInicial, #imgGameover , #imgGame, #fraseOver {
+ width: 100%;
+ height: 100vh;
+ background-size: cover;
+ background-repeat: no-repeat;
+ position: absolute;
+ display: flex;
+
+
+
+
+  
+}
+
+
+}
+

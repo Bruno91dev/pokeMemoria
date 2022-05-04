@@ -17,13 +17,16 @@
     <audio controls loop="true" src="./audios/tema.mp3.mp3"></audio>
   </div>
   <body>
+    <img id="imgGame" src="./imagens/fundojogo.jpg" />
     <div id="gamePlay">
+      <img id="imgInicial" src="./imagens/capa10.jpg" />
       <button id="start" onclick="start()">Iniciar a caçada Pokemon</button>
     </div>
     <div id="gameBoard"></div>
 
     <div id="gameOver">
-      <div>Parabéns, você capturou todos os pokemons!</div>
+      <img id="imgGameover" src="./imagens/gameOver.jpeg" />
+      <div id="fraseOver">Parabéns, você capturou todos os pokemons!</div>
       <button id="restart" onclick="restart()">Jogue Novamente</button>
     </div>
 
