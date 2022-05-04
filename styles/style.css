@@ -13,7 +13,7 @@ body{
   height: 100vh;  
   background-size: cover;
   background-repeat: no-repeat;  
-  background-color: aqua;
+  background-color: rgb(34, 31, 31);
   width: 100%;
   
 }
@@ -91,7 +91,7 @@ body{
 #gameBoard{
   max-width: 700px;
   display:grid;
-  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   gap: 85px;
   justify-content: center;
   align-items: center;
